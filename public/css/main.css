@@ -1,0 +1,403 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth; }
+
+@font-face {
+  font-family: site;
+  src: url(../fonts/IRANYekanWeb-Medium.eot);
+  src: url(../fonts/IRANYekanWeb-Medium.ttf);
+  src: url(../fonts/IRANYekanWeb-Medium.woff);
+  src: url(../fonts/IRANYekanWeb-Medium.woff2); }
+
+@keyframes upToDown {
+  from { }
+  to {
+    transform: translateY(850px);
+    opacity: 1; } }
+
+div#app {
+  width: 100%; }
+  div#app header {
+    width: 100%;
+    height: 100px;
+    background-image: url(../image/golestan-logo/golestan-backGround-Img-footer.png);
+    position: fixed;
+    top: 0;
+    z-index: 50; }
+    div#app header div.logo {
+      width: fit-content;
+      transform: translate(-90%, 40%);
+      cursor: pointer; }
+      div#app header div.logo img {
+        width: 100%;
+        object-fit: cover; }
+    div#app header div.menu {
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 0;
+      left: -7%;
+      padding-bottom: 20px;
+      box-sizing: border-box; }
+      div#app header div.menu nav {
+        width: 70%;
+        height: inherit;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: end; }
+        div#app header div.menu nav ul {
+          width: 100%;
+          height: inherit;
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: center;
+          align-items: end; }
+          div#app header div.menu nav ul li.a {
+            list-style: none;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            align-items: end;
+            cursor: pointer;
+            padding: 10px 20px;
+            box-sizing: border-box;
+            text-align: center;
+            position: relative; }
+            div#app header div.menu nav ul li.a:hover > a {
+              color: white; }
+            div#app header div.menu nav ul li.a:hover > div.sub-menu {
+              display: block; }
+            div#app header div.menu nav ul li.a a {
+              font-family: site;
+              font-size: 15px;
+              text-decoration: none;
+              color: #afb2b4;
+              transition: 300ms; }
+            div#app header div.menu nav ul li.a div.sub-menu {
+              display: none;
+              width: 200px;
+              height: auto;
+              background-color: #2b2b2b;
+              border: 1px solid black;
+              position: absolute;
+              top: 100%;
+              right: 0;
+              z-index: 51; }
+              div#app header div.menu nav ul li.a div.sub-menu div.sub-data {
+                width: 100%;
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: center;
+                align-items: start;
+                margin-right: 10px;
+                padding: 12px;
+                box-sizing: border-box;
+                cursor: pointer; }
+                div#app header div.menu nav ul li.a div.sub-menu div.sub-data:hover > a {
+                  color: white; }
+                div#app header div.menu nav ul li.a div.sub-menu div.sub-data a {
+                  font-family: site;
+                  font-size: 15px;
+                  font-weight: lighter;
+                  text-decoration: none;
+                  color: #afb2b4;
+                  transition: 300ms; }
+  div#app div.elementor-flex {
+    width: 100%;
+    height: 460px;
+    background-color: #d8d8d8;
+    margin-top: 100px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; }
+    div#app div.elementor-flex div.lottery-users {
+      width: 460px;
+      height: 75%;
+      padding-right: 20px;
+      box-sizing: border-box;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      gap: 20px; }
+      div#app div.elementor-flex div.lottery-users h2 {
+        font-family: site;
+        font-weight: 500;
+        color: #ff0000;
+        font-size: 28px; }
+      div#app div.elementor-flex div.lottery-users h4 {
+        font-family: site;
+        font-weight: 300;
+        color: #58595b;
+        font-size: 18px; }
+      div#app div.elementor-flex div.lottery-users div.animation-uptodown {
+        width: inherit;
+        height: 100px; }
+        div#app div.elementor-flex div.lottery-users div.animation-uptodown h5 {
+          width: inherit;
+          font-family: site;
+          font-weight: 100;
+          font-size: 15px;
+          color: #898989;
+          line-height: 33px;
+          text-align: justify;
+          opacity: 0;
+          position: absolute;
+          top: -88%;
+          animation-name: upToDown;
+          animation-duration: 2500ms;
+          animation-delay: 900ms;
+          animation-fill-mode: forwards; }
+      div#app div.elementor-flex div.lottery-users div.more-btn {
+        width: 135px;
+        height: 40px;
+        background-color: #fff;
+        border-radius: 10px;
+        border: 1px solid #a09e9e;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 300ms; }
+        div#app div.elementor-flex div.lottery-users div.more-btn:hover {
+          background-color: #ff0000; }
+        div#app div.elementor-flex div.lottery-users div.more-btn:hover > a {
+          color: #fff; }
+        div#app div.elementor-flex div.lottery-users div.more-btn a {
+          font-family: site;
+          font-size: 14px;
+          color: #a09e9e; }
+    div#app div.elementor-flex div.lottery-logo {
+      width: 460px;
+      height: 75%;
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      margin-right: 20px; }
+      div#app div.elementor-flex div.lottery-logo img {
+        opacity: 0;
+        position: absolute;
+        top: -110%;
+        animation-name: upToDown;
+        animation-duration: 2500ms;
+        animation-delay: 600ms;
+        animation-fill-mode: forwards; }
+  div#app div.divider {
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box; }
+    div#app div.divider div.main-divider {
+      width: inherit;
+      border: 0.5px solid #96939396; }
+  div#app div.upWard-btn {
+    width: 40px;
+    height: 40px;
+    background-color: #2b2b2b93;
+    border-radius: 2px;
+    transition: 300ms;
+    padding: 13px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    left: 2%;
+    bottom: 4%;
+    cursor: pointer; }
+    div#app div.upWard-btn:hover {
+      background-color: #2b2b2b; }
+    div#app div.upWard-btn a img {
+      width: 100%;
+      padding-bottom: 3px;
+      object-fit: cover; }
+  div#app div.about {
+    width: 100%;
+    height: 425px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    div#app div.about div.main-about {
+      width: 50%;
+      height: 90%;
+      margin-top: 20px;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: start;
+      align-items: start;
+      gap: 20px; }
+      div#app div.about div.main-about div.about-golestan h3 {
+        font-family: site;
+        font-size: 20px;
+        font-weight: lighter;
+        color: #ff0000; }
+      div#app div.about div.main-about div.passage {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: start;
+        align-items: start;
+        gap: 50px; }
+        div#app div.about div.main-about div.passage h5 {
+          font-family: site;
+          font-size: 15px;
+          font-weight: lighter;
+          line-height: 30px;
+          text-align: justify;
+          color: #898989; }
+          div#app div.about div.main-about div.passage h5 span {
+            font-family: site;
+            font-size: 15px;
+            font-weight: lighter;
+            line-height: 30px;
+            text-align: justify;
+            color: #ff0000; }
+  div#app div.products {
+    width: 100%;
+    height: 220px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    div#app div.products div.golestan-products {
+      width: 50%;
+      height: 90%;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: start;
+      align-items: start;
+      gap: 20px; }
+      div#app div.products div.golestan-products h3 {
+        font-family: site;
+        font-size: 20px;
+        color: #ff0000;
+        font-weight: lighter; }
+      div#app div.products div.golestan-products h5 {
+        font-family: site;
+        font-size: 15px;
+        font-weight: lighter;
+        line-height: 30px;
+        text-align: justify;
+        color: #898989; }
+        div#app div.products div.golestan-products h5 span {
+          font-family: site;
+          font-size: 15px;
+          font-weight: lighter;
+          line-height: 30px;
+          text-align: justify;
+          color: #ff0000; }
+  div#app div.grid-option {
+    width: 100%;
+    height: 490px;
+    margin-top: 30px;
+    direction: ltr;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    div#app div.grid-option div.grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 1fr 70px;
+      grid-column-gap: 20px;
+      grid-row-gap: 30px; }
+      div#app div.grid-option div.grid .div1 {
+        grid-area: 1 / 1 / 2 / 2; }
+      div#app div.grid-option div.grid .div2 {
+        grid-area: 2 / 1 / 3 / 2; }
+      div#app div.grid-option div.grid .div3 {
+        grid-area: 1 / 2 / 2 / 3; }
+      div#app div.grid-option div.grid .div4 {
+        grid-area: 2 / 2 / 3 / 3; }
+      div#app div.grid-option div.grid .div5 {
+        grid-area: 1 / 3 / 2 / 4; }
+      div#app div.grid-option div.grid .div6 {
+        grid-area: 2 / 3 / 3 / 4; }
+      div#app div.grid-option div.grid .div7 {
+        grid-area: 1 / 4 / 2 / 5; }
+      div#app div.grid-option div.grid .div8 {
+        grid-area: 2 / 4 / 3 / 5; }
+  div#app div.bilboard {
+    width: 100%;
+    height: 535px;
+    background-color: #e9d69f;
+    position: relative; }
+    div#app div.bilboard img {
+      width: 100%;
+      height: 515px;
+      object-fit: cover; }
+    div#app div.bilboard div.introduce {
+      width: 290px;
+      height: 100px;
+      background-color: #ed1c24;
+      z-index: 100;
+      position: absolute;
+      bottom: 0;
+      right: 24%;
+      padding: 10px 30px;
+      box-sizing: border-box; }
+      div#app div.bilboard div.introduce h3 {
+        font-family: site;
+        font-size: 24px;
+        font-weight: lighter;
+        color: #fff; }
+      div#app div.bilboard div.introduce p {
+        font-family: site;
+        font-size: 15px;
+        font-weight: lighter;
+        color: #fff;
+        margin-top: 15px; }
+  div#app div.information {
+    width: 100%;
+    height: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    div#app div.information div.main-info {
+      width: 50%;
+      height: 310px;
+      margin-top: 30px;
+      padding: 20px;
+      box-sizing: border-box;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: start;
+      align-items: start;
+      gap: 25px; }
+      div#app div.information div.main-info h3 {
+        font-family: site;
+        font-size: 20px;
+        font-weight: lighter;
+        color: #ff0000; }
+      div#app div.information div.main-info h5 {
+        font-size: 13px;
+        font-family: site;
+        font-weight: lighter;
+        color: #898989;
+        line-height: 30px;
+        text-align: justify; }
+
+li.b {
+  border-left: 1px solid gray; }
+
+a.c {
+  color: white !important; }
+
+div.e {
+  margin-top: 30px; }
+
+div.p {
+  border-bottom: 1px solid lightgrey;
+  padding-top: 25px;
+  box-sizing: border-box; }
+  div.p h4 {
+    font-family: site;
+    font-size: 15px;
+    font-weight: lighter;
+    color: #a09e9e;
+    text-align: center; }
